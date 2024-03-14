@@ -1,0 +1,575 @@
+/* variables */
+$sections_margin: 0px 0px; 
+$sections_padding: 0; /* 20px 0 */
+
+/* style page */
+.main--home {
+  /*font-family: sans-serif; /**/        
+}
+/* style page */
+
+/***** TODO - module  *********************/
+
+
+section:nth-child(even) {
+  /*background-color: #f0f0f0;*/
+}
+
+/* s-01 */
+.s-01 { 
+  font-size: 16px;
+  &__title {
+    width: 85%;
+    margin-left: 15%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1em;
+    border-radius: 22px;
+    font-weight: 600;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(204,204,204, 0.4);
+    /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+    -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+    box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  }
+  
+}
+
+
+.admin {
+  
+  display: flex;
+  flex-direction: row; width: 100%; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 8px;
+  font-size: 16px;
+  &__income {position: relative;
+    display: flex;
+    flex-direction: row; width: 100%;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 8px;        
+    width: 64%;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(204,204,204, 0.4);
+    /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+    -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+    box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  }
+
+  &__image-box {
+    position: absolute; 
+    top: -5px; 
+    left: -3px; 
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: #ffffff;         
+  }
+
+  &__image-box-x {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    border-radius: 50%;         
+    background: conic-gradient(from 90deg, #d0d1d1 90deg, #563683 90deg); 
+  }
+
+  &__image {
+    width: 100%;
+    padding: 0;
+    border: solid 2px #ffffff; /* Замените на нужное значение ширины бордера */
+    border-radius: 50%;
+    background: #ffffff;
+    
+    
+    
+  }
+  &__unit {
+    margin-right: 2%;
+  }
+
+  &__sum {
+    padding: 0 8px;
+    border-radius: 22px;
+    font-size: 16px;
+    background: #dfe0e0;     
+    letter-spacing: 3px;
+    font-weight: 500;
+    
+  }
+  &__nav-link {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 31%;
+    padding: 0 10px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(204,204,204, 0.4);
+    /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+    -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+    box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);   
+  }
+  &__nav-link:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  &__nav-icon {
+    padding: 8px 5px;
+    filter: invert(50%) sepia(100%) saturate(340%) hue-rotate(165deg);
+  }
+  
+
+  &__nav-span {
+    padding: 8px 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;   
+    font-weight: 600;
+    color: #30abe4;
+  }
+}
+
+
+.s-01__users { 
+  padding: 5px 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(204,204,204, 0.4);
+  /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+  -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+  box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+}
+
+.users-info {
+  display: flex;
+  flex-direction: row; width: 100%;
+  justify-content: space-between; 
+  align-items: center; 
+  font-size: 16px;
+  font-weight: 500;
+  color: #2b9bcf;
+                                               
+  &__alignment {
+    /*border: 1px solid red;*/ 
+    width: 20%;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;     
+  } 
+
+  &__text {
+    word-wrap: break-word;
+    line-height: normal; 
+  } 
+
+  &__alignment--style {
+    width: 40%;    
+  }
+    
+  &__subtitle {
+    font-size: 0.9em;    
+  }
+  
+}
+
+.user {   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 3px 0;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(204,204,204, 0.4);
+  border-radius: 12px;
+  /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+  -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+  box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  color: #2b9bcf; 
+  
+  
+  &__alignment { 
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center; 
+    width: 20%; 
+    min-height: 50px;    
+    margin: 0;
+    padding: 5px 0; /* WOW - padding: 15px auto; */   
+  }
+  
+  &__alignment--style {
+    position: relative;
+    display: flex;  
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center; 
+    width: 40%;
+    padding-left: 5px;     
+  }
+
+  &__image {    
+    width: 25%;
+  }
+
+  &__text {  
+    width: 75%;  
+    margin-left: 3px;    
+    word-wrap: break-word;
+    line-height: normal; 
+  }
+
+  &__data {        
+    width: 100%;
+    word-wrap: break-word;
+    line-height: normal;
+    text-align: center; 
+  }
+    
+  &__company, 
+  &__phone,
+  &__email,
+  &__id { 
+    padding-right: 5px; 
+    font-size: 14px;
+    text-align: center;     
+  }
+
+  &__name { 
+    padding-right: 0; 
+    font-size: 12px;
+    text-align: left;    
+  }
+              
+}
+
+.invitation {
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 8px;  
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(204,204,204, 0.4);
+  border-radius: 12px;
+  /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+  -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+  box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  
+
+  &__subtitle {
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;   
+    text-align: center; 
+  }
+
+  &__your-link {
+    width: 63%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #dfe0e0;
+    border-radius: 22px;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center; 
+  }
+
+  &__copy-btn {
+    width: 41%;
+    margin-bottom: 15px;
+    padding: 7px;
+    background: linear-gradient(to right, #30cf4f, #37b3fe);
+    outline: none;
+    border: none;   
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center; 
+    border: 1px solid rgba(204,204,204, 0.4);
+    border-radius: 22px;
+    /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+    -webkit-box-shadow: 0px 18px 12px -16px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 18px 12px -16px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 18px 12px -16px rgba(0, 0, 0, 0.6);   
+  }
+  &__copy-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}
+
+.referals {    
+  margin-bottom: 8px;
+  padding: 5px;  
+  font-size: 16px;
+  text-align: center;  
+  line-height: 1.6; 
+  word-wrap: break-word;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+  -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+  box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+
+  &__alignment {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: flex-start; 
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;     
+  }
+
+  &__level {    
+    width: 20%; 
+    margin: 3px;
+    background: #ffffff;
+    border: 1px solid rgba(204,204,204, 0.4);
+    border-radius: 12px; 
+    /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+    -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+    box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  }
+
+  &__data-level {
+    margin: 0 10px;
+    padding: 3px 0;
+    font-size: 0.9em;
+    font-weight: 500;  
+    border-bottom: 1px solid #30abe4;
+  }
+
+  &__data-people {
+    margin: 0;
+    padding: 3px 0;
+    font-size: 0.8em;
+    font-weight: 600;     
+  }
+
+}
+
+.pagination {
+  display: flex;             
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;   
+  padding-top: 10px; 
+  padding-bottom: 0; 
+  font-size: 16px;
+  font-weight: 500;
+  color: #2b9bcf;
+  
+  &__link {    
+    display: flex;             
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    width: 38px;
+    height: 38px;
+    margin-left: 8px;          
+    background: #ffffff; 
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(204,204,204, 0.6);
+    border-radius: 12px;
+    /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+    -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+    box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);   
+  }
+  
+  &__link--active {
+    background: #5932ea;
+  }
+  
+  &__link-number {
+    font-size: 1em;
+  }
+  
+  &__link-number--active {
+    display: flex;             
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin-left: 8px;
+    padding: 15px 0; 
+    border-radius: 12px;
+    background: #30abe4;
+    color: #ffffff;
+  }
+  
+  &__link-prev,
+  &__link-next {
+    font-size: 16px; 
+  }
+
+  &__dots {       
+    display: flex;             
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 38px;
+    height: 38px;
+    margin-left: 8px;
+    padding-bottom: 5px;
+    border-radius: 12px;    
+  } 
+}
+
+
+
+@media screen and (max-width: 460px) {
+  .s-01 { 
+    &__title {    
+      padding: 8px;       
+      letter-spacing: 1px;
+      font-size: 0.8em;
+      text-align: center;
+      font-weight: 600;       
+    }  
+  }
+
+  .admin {
+    font-size: 0.8em;  
+    letter-spacing: 1px;
+
+    &__income {
+      padding: 3px;     
+    }
+
+    &__image-box {           
+      width: 50px;
+      height: 50px;
+      padding: 1px;
+    }
+
+    &__unit {
+      width: 35px;
+    }
+
+    &__sum {    
+      padding: 3px 5px;
+      font-size: 0.9em;
+      background: silver;    
+      letter-spacing: 2px;
+      font-weight: 500;    
+    }
+  
+    &__nav-link {
+      display: flex;
+      flex-direction: row; 
+      justify-content: center; 
+      align-items: center;
+      width: 31%;
+    }
+
+    &__nav-icon {
+      width: 28px;    
+      padding: 5px;
+    }
+
+    &__nav-span {
+      font-size: 0.9em;  
+      letter-spacing: 1px;
+    }
+  }
+
+  .invitation {
+
+    &__your-link {
+      width: 76%;
+      margin-bottom: 10px;
+      padding: 3px;   
+      font-size: 0.9em;
+      font-weight: 500;   
+    }
+
+    &__copy-btn {
+      font-size: 0.9em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    } 
+  }
+
+
+  .pagination { 
+    padding-top: 15px;   
+    font-size: 16px;
+  
+    &__link {    
+      width: 28px;
+      height: 28px;        
+      border-radius: 8px;
+        
+    }
+      
+    &__link-number {
+      font-size: 0.9em;
+    }
+  
+    &__link-number--active {   
+      width: 28px;
+      height: 28px;
+      padding: 0;        
+      border-radius: 8px;    
+    }
+  
+    &__link-prev,
+    &__link-next {
+      font-size: 16px; 
+    }
+
+    &__dots {   
+      width: 20px;
+      height: 30px;            
+      border-radius: 8px;    
+    }  
+  }
+ 
+  .menu__list-image { 
+    height: 25px; 
+  } 
+
+  .menu__list {  
+    font-size: 0.5em;
+  }
+
+}
+
+
+

@@ -1,0 +1,29 @@
+$footer_bg: #f7def9;
+$footer-logo_hover: $color-hover;
+$footer-social_color: darken(#ffffff, 8%);
+$footer-inner_height: 60px;
+
+
+footer { 
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;		  
+  
+  
+  background-position: bottom center; 
+  background-size: cover;
+  padding: 10px 0;
+  background: linear-gradient(to right, #ffffff 0%, #b9bcfa 100%);
+}
+
+.footer__inner {
+  
+  min-height: $footer-inner_height;
+  padding: 0;
+  
+  
+  
+  text-align: left;  
+}
+
