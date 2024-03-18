@@ -44,14 +44,16 @@ section:nth-child(even) {
 .admin {
   
   display: flex;
-  flex-direction: row; width: 100%; 
+  flex-direction: row; 
   justify-content: space-between; 
   align-items: center;
+  width: 100%; 
   margin-top: 8px;
   font-size: 16px;
-  &__income {position: relative;
+  &__income {
+    position: relative;
     display: flex;
-    flex-direction: row; width: 100%;
+    flex-direction: row; 
     justify-content: flex-end; 
     align-items: center;
     padding: 8px;        
@@ -510,7 +512,6 @@ section:nth-child(even) {
   }
 
   .invitation {
-
     &__your-link {
       width: 76%;
       margin-bottom: 10px;
